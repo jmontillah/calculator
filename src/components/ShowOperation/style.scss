@@ -1,0 +1,15 @@
+@import './../../style/variables.scss';
+
+.divText {
+    border-radius: 8px;
+    border: $primaryBorderColor 1px solid;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        padding: 10px;
+        margin: 0;
+        color: $secondTextColor;
+        display: inline-flex;
+        align-items: center;
+    }
+}

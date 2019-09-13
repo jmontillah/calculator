@@ -1,0 +1,1 @@
+export const getToBegin = state => state.toBegin;

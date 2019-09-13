@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bodyBgColor;
+}
+
+.container {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

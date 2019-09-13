@@ -1,0 +1,19 @@
+@import './../../style/variables.scss';
+
+.divKey {
+    display: flex;
+    justify-content: center;
+    background-color: $primaryBgColor;
+    padding: 8px;
+    border-radius: 8px;
+    min-width: 25px;
+    min-height: 25px;
+    cursor: pointer;
+    .keyText {
+        margin: 0;
+        color: $primaryTextColor;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+    }
+}

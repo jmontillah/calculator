@@ -1,0 +1,16 @@
+@import './../../style/variables.scss';
+
+.divTextLastOperation {
+    border-radius: 8px;
+    border: $primaryBorderColor 1px solid;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        font-size: .8rem;
+        padding: 6px;
+        margin: 0;
+        color: $thirdTextColor;
+        display: inline-flex;
+        align-items: center;
+    }
+}
