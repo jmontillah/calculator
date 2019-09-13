@@ -4,19 +4,19 @@ import { connect } from 'react-redux';
 import Key from './../components/Key';
 import { setOperation } from './../actions/setOperation';
 import { setToBegin } from './../actions/setToBegin';
+import { getToBegin } from './../selectors/toBegin';
+import { getOperation } from './../selectors/operation';
 
 class KeyContainer extends Component {
   constructor(props) {
     super(props);
   }
-  
-  setToBegin = value => {
-    this.props.setToBegin(value);
-  }
-  
+
   setOperation = value => {
-    this.props.setToBegin(value);
-    this.props.setOperation(value);
+    const { operation, toBegin, setOperation, setToBegin } = this.props;
+    value === '=' ? setToBegin(0) : setToBegin(1); // 1 para saber que se agrega y 0 para reemplazar
+    alert(toBegin);
+    toBegin === 0 ? setOperation(value) : setOperation(`${operation} ${value}`);
   }
 
   render() {
@@ -36,4 +36,9 @@ KeyContainer.propTypes = {
   setToBegin: PropTypes.func.isRequired,
 }
 
-export default connect(null, { setOperation, setToBegin })(KeyContainer);
+const mapStateToProps = state => ({
+  toBegin: getToBegin(state),
+  operation: getOperation(state),
+})
+
+export default connect(mapStateToProps, { setOperation, setToBegin })(KeyContainer);
