@@ -1,6 +1,6 @@
 This project is made to show what I've been learning about React.js.
 
-## Calculator
+## Calculator (still in progress)
 
 This project is a basic calculator and the next tools were used to make it possible:
 
