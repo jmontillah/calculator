@@ -17,7 +17,6 @@ class KeyContainer extends Component {
   }
 
   setOperation = value => {
-    alert('as');
     const { operation, toBegin, mathOperation, setOperation, setToBegin, setMathOperation,
       setHistory } = this.props;
     toBegin === 0 ? setOperation(value) : 
