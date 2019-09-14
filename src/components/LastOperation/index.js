@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 
-const LastOperation = () => {
+const LastOperation = ({ lastOperation }) => {
   return (
     <div className="divTextLastOperation">
-      <p>2 x 4</p>
+      <p>{lastOperation}</p>
     </div>
   )
 }
 
 LastOperation.propTypes = {
-
+  lastOperation: PropTypes.string.isRequired,
 }
 
 export default LastOperation;

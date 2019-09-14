@@ -8,3 +8,5 @@ export const KEYS = [
 
 export const SET_OPERATION = 'SET_OPERATION';
 export const SET_TO_BEGIN = 'SET_TO_BEGIN';
+export const SET_MATH_OPERATION = 'SET_MATH_OPERATION';
+export const SET_HISTORY = 'SET_HISTORY';

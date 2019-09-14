@@ -1,8 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made to show what I've been learning about React.js.
 
-## Available Scripts
+## Calculator
 
-In the project directory, you can run:
+This project is a calculator, the next tools were used to make this app possible:
 
 ### `npm start`
 

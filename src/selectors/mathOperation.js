@@ -1,0 +1,1 @@
+export const getMathOperation = state => state.mathOperation;

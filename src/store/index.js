@@ -4,8 +4,8 @@ import reducers from './../reducers';
 const initialState = {
   operation: '0',
   toBegin: 0,
-  // history: '',
-  // mathInput: 0
+  mathOperation: '0',
+  history: '',
 }
 
 // To see state and redux in chrome

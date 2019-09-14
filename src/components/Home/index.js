@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Keyboard from './../Keyboard';
 import ShowOperationContainer from './../../containers/ShowOperationContainer';
-import LastOperation from '../LastOperation';
+import LastOperationContainer from './../../containers/LastOperationContainer';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <Grid item xs={12}>
           <Grid container justify="center" alignItems="center" spacing={2}>
             <Grid item xs={12}>
-              <LastOperation />
+              <LastOperationContainer />
             </Grid>
             <Grid item xs={12}>
               <ShowOperationContainer />
