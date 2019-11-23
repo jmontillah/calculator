@@ -45,8 +45,13 @@ class KeyContainer extends Component {
     } else {
       if (value === 'x') value = '*';
       if (value === '÷') value = '/';
+      if (value === '√') value = 'sqrt(';
       setToBegin(1);
-      setMathOperation(`${mathOperation}${value}`);
+      value.indexOf('sqrt') != -1 ? 
+        setMathOperation(`${value}`) :
+        mathOperation.indexOf('sqrt') != -1 ?
+          setMathOperation(`${mathOperation}${value})`) :
+          setMathOperation(`${mathOperation}${value}`);
     }
   }
 
